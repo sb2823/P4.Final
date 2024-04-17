@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Styling/style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        background-color: #3a1237;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #bf2f91;
+      }
+
+      .formcontainer {
+        padding-top: 20px;
+        border-radius: 3px;
+        background-color: #f2eaf0;
+        padding: 300px;
+        background-color: #efc2e8;
+      }
+
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 9px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+      input[type="submit"] {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 75px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img
+            style="width: 62px; height: 70px; border-radius: 50%"
+            src="paymentAndLogo/logo.png"
+          />
+
+          <a class="navbar-brand" href="index.html">COZY THREADS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <!-- NAV BAR LEFT -->
+
+          <!-- NAV BAR RIGHT -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >FEATURES <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="productPage.html">WOMEN</a></li>
+                <li><a href="mens.html">MEN</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+              </ul>
+            </li>
+            <li></li>
+            <li><a href="productPage.html">SHOP</a></li>
+            <li class="active"><a href="contactUs.html">CONTACT US</a></li>
+
+            <li><a href="aboutMe.html"> About Us</a></li>
+            <li><a href="#">SEARCH</a></li>
+            <li class="nav-item">
+              <i class="fal fa-search"></i>
+              <i class="fal fa-shopping-bag"></i>
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container " style="padding-top: 120px">
+      <h1 style="text-align: center">Contact Us</h1>
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="mt-5 py-5 container-fluid" style="padding-top: 25px">
+      <div class="row mc-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img
+            src="paymentAndLogo/logo.png"
+            alt="logo"
+            style="width: 70px; height: 70px; border-radius: 50%"
+          />
+          <p class="pt-3">
+            By entering my email above and submitting this form, I agree I am
+            signing up to receive Cozy Threads promotional emails. I confirm
+            that I have read and agree to Cozy Threads’ Privacy Policy and
+            Financial Incentive Notice (as applicable). New subscribers will
+            receive 15% off a future order. Unsubscribe at any time here.
+          </p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="index.html"> New Arrivals</a></li>
+            <li><a href="mens.html"> Men</a></li>
+            <li><a href="productPage.html"> Women</a></li>
+            <li><a href="#"> Boys</a></li>
+            <li><a href="#"> Girls</a></li>
+
+            <li><a href="#"> Shoes</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Contact Us</h5>
+          <div>
+            <h6 class="text-uppercase">Address</h6>
+            <p>123 STREET NAME, CITY, US</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">PHONE</h6>
+            <p>732-624-4700</p>
+          </div>
+          <div>
+            <h6 class="text-uppercase">EMAIL</h6>
+            <p>COZYTHREADS@GMAIL.COM</p>
+          </div>
+        </div>
+
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img
+              class="img-fluid m-2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZoAWrCghwWSmyexvlMYGBtqbu2k2aABWjg&s"
+              alt="bag"
+              style="max-width: 90px; max-height: 90px"
+            />
+            <img
+              class="img-fluid m-2"
+              src="https://shopbloomingdaily.com/cdn/shop/products/trending-fall-accessories-gold-jewelry-for-women-accessories-418442.jpg?v=1693284817"
+              alt="bag"
+              style="max-width: 100px; max-height: 100px"
+            />
+            <img
+              class="img-fluid m-2"
+              src="images/COS-1133-pearl-strand-05_1200x.jpg"
+              alt="bag"
+              style="max-width: 100px; max-height: 100px"
+            />
+            <img
+              class="img-fluid m-2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LpsnhVhmH8rChYXe7La1xEyDIv-OE1kVJA&s "
+              alt="bag"
+              style="max-width: 100px; max-height: 100px"
+            />
+            <img
+              class="img-fluid m-2"
+              src="images/COLBY_2-2.jpg"
+              alt="bag"
+              style="max-width: 100px; max-height: 100px"
+            />
+            <img
+              class="img-fluid m-2"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgNMQugkZrA6DAl8tSniWH40DH_NN4iyyIA&s"
+              alt="bag"
+              style="max-width: 100px; max-height: 100px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12">
+            <img
+              src="images/Major-Credit-Card-Logo-PNG-Clipart.png"
+              style="max-width: 190px; max-height: 99px"
+            />
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <p>&copy; 2024, Sadia Barlas. All Right Reserved</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fab fa-twitter"></i> </a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
